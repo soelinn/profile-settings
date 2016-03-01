@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\directory\background\shell\PowerShell]
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+@="Open PowerShell Here"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\directory\background\shell\PowerShell\command]
+@="\"C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoExit -Command Set-Location -LiteralPath '%V'"
+
+[HKEY_CLASSES_ROOT\directory\shell\PowerShell]
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+@="Open PowerShell here"
+
+[HKEY_CLASSES_ROOT\directory\shell\PowerShell\command]
+@="\"C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoExit -Command Set-Location -LiteralPath \"%L\""
+
+[HKEY_CLASSES_ROOT\Folder\shell\PowerShell]
+@="Open PowerShell Here"
+"Icon"="%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+
+[HKEY_CLASSES_ROOT\Folder\shell\PowerShell\command]
+@="\"C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoExit -Command Set-Location -LiteralPath '%L'"
